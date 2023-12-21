@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Support from "./Support.vue";
 const email = "conor.sheehan.dev@gmail.com";
 </script>
 
@@ -21,13 +20,20 @@ const email = "conor.sheehan.dev@gmail.com";
       <li>{{ $t("helpPointsRule3A") }}. {{ $t("helpPointsRule3B") }}!</li>
     </ul>
 
-    <h3>Support</h3>
-    <Support />
-
     <h3>{{ $t("AboutGame") }}</h3>
     <ul>
       <li>
         {{ $t("AboutGameText") }}
+      </li>
+      <li>Feito para Carminho, que tenta sempre usar palavras portuguesas no "Spelling Bee".
+      </li>
+      <li>Originalmente criado por e bifurcado de
+      <el-link
+        type="primary"
+        href="https://github.com/ConorSheehan1/spelling-bee"
+        target="_blank">
+        Open Source GitHub de ConorSheehan1
+      </el-link>
       </li>
       <li>
         {{ $t("InspirationSpellingBee") }}
@@ -42,9 +48,9 @@ const email = "conor.sheehan.dev@gmail.com";
         {{ $t("WordlistSource") }}
         <el-link
           type="primary"
-          href="https://github.com/en-wl/wordlist/blob/master/alt12dicts/2of4brif.txt"
+          href="https://natura.di.uminho.pt/download/sources/Dictionaries/wordlists/"
           target="_blank">
-          Wordlist
+          Dicionários Natura
         </el-link>
       </li>
     </ul>
@@ -55,14 +61,10 @@ const email = "conor.sheehan.dev@gmail.com";
         {{ $t("BugText") }}
         <el-link
           type="primary"
-          href="https://github.com/ConorSheehan1/spelling-bee/issues"
+          href="https://github.com/finnp/spelling-bee/issues"
           target="_blank"
           >GitHub</el-link
         >
-        {{ $t("BugTextEmail") }}
-        <el-link type="primary" :href="`mailto:${email}`" target="_blank">{{
-          email
-        }}</el-link>
       </li>
     </ul>
   </div>

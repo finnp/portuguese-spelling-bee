@@ -3,12 +3,12 @@ import { onMounted, onUnmounted, ref } from "vue";
 import { useMainStore } from "../store";
 import { shuffle } from "../utils";
 import { useI18n } from "vue-i18n";
-import en from "../locales/en.json";
+import pt from "../locales/pt.json";
 
 const { t } = useI18n({
   inheritLocale: true,
   messages: {
-    en,
+    pt,
   },
 });
 
