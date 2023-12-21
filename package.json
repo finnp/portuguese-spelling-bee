@@ -10,7 +10,8 @@
     "lint:prettier": "prettier --check .",
     "lintfix": "prettier --write --list-different .",
     "createAllWords": "ts-node data/AllWords/createAllWords.ts",
-    "createFiles": "ts-node data/createFiles.ts"
+    "createFiles": "ts-node data/createFiles.ts",
+    "deploy": "npm run build && netlify deploy --prod --dir dist"
   },
   "prettier": {
     "bracketSameLine": true
